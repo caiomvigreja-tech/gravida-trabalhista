@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-brand-bg: #fdf8f5;
+  --color-brand-text: #2c2420;
+  --color-brand-accent: #c86b5e;
+  --color-brand-cta: #e05a47;
+  --color-brand-cta-hover: #c44a38;
+  --color-brand-light: #f4e9e2;
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+}
