@@ -2,17 +2,37 @@
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-serif: "Cinzel", "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 
-  --color-brand-bg: #fdf8f5;
-  --color-brand-text: #2c2420;
-  --color-brand-accent: #c86b5e;
-  --color-brand-cta: #e05a47;
-  --color-brand-cta-hover: #c44a38;
-  --color-brand-light: #f4e9e2;
+  --color-brand-bg: #fdfbf7;
+  --color-brand-text: #1a1a1a;
+  --color-brand-accent: #b8860b;
+  --color-brand-cta: #1a1a1a;
+  --color-brand-cta-hover: #b8860b;
+  --color-brand-light: #f0e8d9;
+  --color-brand-gold: #b8860b;
+  --color-brand-ivory: #fdfbf7;
+}
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
 }
 
 body {
   background-color: var(--color-brand-bg);
   color: var(--color-brand-text);
+  background-image: radial-gradient(circle at 50% 50%, rgba(184, 134, 11, 0.03) 0%, transparent 100%);
+}
+
+.greek-key-border {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20' viewBox='0 0 40 20'%3E%3Cpath d='M0 10 L4 10 L4 4 L14 4 L14 14 L8 14 L8 8 L10 8 L10 12 L12 12 L12 6 L6 6 L6 16 L16 16 L16 10 L20 10 L20 10 L24 10 L24 4 L34 4 L34 14 L28 14 L28 8 L30 8 L30 12 L32 12 L32 6 L26 6 L26 16 L36 16 L36 10 L40 10' fill='none' stroke='%23b8860b' stroke-width='1'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  height: 20px;
+}
+
+.marble-bg {
+  background-color: #fdfbf7;
+  background-image: 
+    linear-gradient(120deg, rgba(255,255,255,0.5) 0%, rgba(200,200,200,0.1) 50%, rgba(255,255,255,0.5) 100%),
+    url("https://www.transparenttextures.com/patterns/felt.png");
 }
